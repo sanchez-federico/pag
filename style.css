@@ -1,0 +1,328 @@
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+  /* Colores personalizados */
+:root {
+    --color1: #593643;
+    --color2: #D99543;
+    --color3: #F2BB77;
+    --color4: #F2CA99;
+    --color5: #0D0D0D;
+    --color-texto: #0D0D0D;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid var(--color1);
+}
+
+
+
+
+.navbar .nav-link {
+    color: var(--color-texto);
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+    margin-right: 20px; /* Ajusta el espaciado horizontal entre las opciones */
+}
+
+.navbar .nav-link:hover {
+    color: var(--color2);
+}
+
+/* Video de fondo */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Colores de barra */
+.color-bar {
+    background-color: var(--color3);
+    height: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.color-block {
+    background-color: var(--color4);
+    flex-grow: 1;
+    height: 100%;
+}
+.color1 {
+    width: 250px;
+    background-color:var(--color1) ;
+}
+
+.color2 {
+    width: 250px;
+    background-color: var(--color2);
+}
+
+.color3 {
+    width: 250px;
+    background-color: var(--color3);
+}
+
+.color4 {
+    width: 250px;
+    background-color: var(--color4);
+}
+
+.color5 {
+    width: 250px;
+    background-color:var(--color5);
+}
+
+/* Mensaje superpuesto */
+.message-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-texto);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.message-overlay {
+background-color: rgba(0, 0, 0, 0.5); /* Ajusta el nivel de opacidad del fondo */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.message-container h2,
+.message-container p {
+    color: inherit;
+}
+
+/* Contenido adicional */
+.contenido-adicional {
+    background-color: #fff;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.tarjeta {
+    height: 100%; /* Ajusta la altura de todas las tarjetas */
+  }
+  
+  .tarjeta .card-body {
+    flex-grow: 1; /* Hace que el contenido de la tarjeta ocupe todo el espacio disponible */
+  }
+
+.tarjeta {
+    background-color: var(--color1);
+}
+
+.tarjeta h3 {
+    color: var(--color3);
+}
+
+.tarjeta ul li a {
+    color: #fff;
+}
+
+.tarjeta ul li a:hover {
+    color: var(--color2);
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    color: var(--color1);
+    padding: 30px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: var(--color2);
+}
+
+.footer h5 {
+    color: var(--color1);
+}
+
+.footer ul li a {
+    color: var(--color1);
+}
+
+.footer ul li a:hover {
+    color: var(--color5);
+}
+/* Estilos específicos para la página de contacto */
+
+/* Ajuste de la posición del cartel sobre la barra de navegación */
+.jumbotron {
+    text-align: center;
+    margin-top: 56px; /* Ajusta el espacio para evitar que se superponga con la barra de navegación */
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .form-group label {
+    color: var(--color2);
+  }
+  .contacto-redes {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .redes-sociales h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-icons li {
+    margin-bottom: 5px;
+  }
+  
+  .social-link {
+    color: var(--color-texto);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .social-link i {
+    margin-right: 5px;
+  }
+  
+  
+  .btn-primary {
+    background-color: var(--color4);
+    border-color: var(--color4);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--color2);
+    border-color: var(--color2);
+  }
+  
+  .social-link {
+    color: var(--color-texto);
+  }
+  .jumbotron-contacto {
+    background-color: var(--color3);
+    color: var(--color-texto);
+    padding-bottom: 20px;
+    margin-top: 150px; /* Ajusta la distancia desde la parte superior */
+    position: relative;
+  }
+  
+  .logo-container {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    margin-block-end: 15px;
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .navbar-contacto {
+    
+    border-bottom: 1px solid var(--color1);
+  }
+  
+  .navbar-contacto .navbar-brand img {
+    margin-top: 5px;
+  }
+  .title {
+    font-weight: bold;
+    color: #593643;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+ 
+  }
+  
+  .line {
+    border: none;
+    border-top: 1px solid #593643;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .carousel-container {
+    position: relative;
+  }
+  .carousel-item .text-center h3,
+.carousel-item .text-center p {
+  color: #593643;
+}
+
+.carousel-item .text-center h3 {
+  font-weight: bold;
+}
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  
+  .carousel-control-prev {
+    left: -3rem;
+  }
+  
+  .carousel-control-next {
+    right: -3rem;
+  }
+  .carousel-img {
+    width: 100%;
+    height: 200px; /* Ajusta la altura deseada para todas las imágenes */
+    object-fit: cover;
+  }
+  .card-img-top {
+    height: 200px; /* Ajusta la altura deseada */
+    object-fit: cover; /* Ajusta la imagen para que se ajuste dentro del contenedor */
+}
+.card-container {
+  margin-top: 50px; /* Ajusta el valor según el margen superior deseado */
+}
+  
+  
+  
+  
+ 
+  
+  
+ 
+  
+  
+  
+  
+  
+  
+    
